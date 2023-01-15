@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro',monospace;
+    /* list-style: none; */
+}
+body
+{
+    overflow:hidden;
+    /* background-color: #ff3177; */
+}
+
+section
+{
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    background:#0e0e0e;
+    background-size: cover;
+    /* z-index: 999; */
+}
+
+section .container
+{
+    /* position: absolute; */
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+ 
+section .container h2
+{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    color: #151515;
+    font: 5em;
+    line-height: 0.9em;
+    letter-spacing: 4px;
+    
+}
+section .container h2 span
+{
+    position: relative;
+    color:#fff;
+    z-index: 1;
+    animation: animate 5s linear infinite;
+}
+
+section .container h2 span .text2
+{
+    animation-delay: -0.5s;
+    filter: hue-rotate(225deg);
+}
+
+section .container h2 span .text3
+{
+    animation-delay: -1s;
+    filter: hue-rotate(180deg);
+}
+
+section .container h2 span .text4
+{
+    animation-delay: -1.5s;
+    filter: hue-rotate(225deg);
+}
+
+@keyframes animate {
+    0%,5%,10.1%,15.1%,25.1%,45%,70.1%
+    {
+        color:#222;
+        text-shadow: 0 0 0 #222;
+    }
+    5.1%,10%,15.2%,25%,45.1%,70%,90.1%,95%
+    {
+        color:rgb(205, 36, 132);
+        text-shadow:    0 0 0 10px #ff3177,
+                        0 0 0 20px #ff3177,
+                        0 0 0 40px #ff3177,
+                        0 0 0 80px #ff3177,
+                        0 0 0 160px #ff3177;
+    }
+}
+
+.grid {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 400px;
+    margin-left: 520px;
+    margin-top: 80px;
+    z-index: 100;
+}
+
+.logo {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 30%;
+    border: 3px solid white;
+
+    border-radius: 40px;
+}
+
+.navbar {
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    background-color: antiquewhite;
+}
+
+.nav-list {
+    width: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: rgb(112, 27, 215);
+    font-weight: 800;
+    font-family: cursive;
+
+}
+
+.nav-list li a:hover {
+    text-decoration: underline;
+    color: rgb(180, 188, 184);
+
+}
+
+.nav-list li {
+    list-style-type: none;
+    padding: 20px 10px;
+}
+
+.rightNav {
+    /* background-color: blue; */
+    width: 50%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+.btn
+{
+    padding: 8px 10px;
+    margin:7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;;
+    font-size:20px;
+    background: none;
+    cursor:pointer;
+    color:blueviolet;
+
+}
+
+.btn-sm
+{
+    padding: 6px 10px;
+    vertical-align:middle;
+}
+
+h3
+{
+    font-size: 2em;
+    color: blueviolet;
+    margin:80px 10px 10px 680px;
+}
+
+
